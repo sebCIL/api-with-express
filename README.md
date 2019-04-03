@@ -16,7 +16,7 @@ Installation des dépendences
 ```
 $ npm install
 ```
-Generattion des certificats auto-signé
+Generation des certificats auto-signé
 ```
 $ openssl genrsa -out api-with-express-key.pem 2048
 ```
