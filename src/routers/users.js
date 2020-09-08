@@ -7,6 +7,7 @@ module.exports = ({ users }, { MissingResourceError, AuthError }) => {
       debug('User login %O', body)
       try {
         const user = await users.login(body);
+        debug("User %O", user);
         res.status(200).send(user);
       } catch (e) {
         res.status(getStatusCode(e)).send({ data: e.data || e.message });
